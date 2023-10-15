@@ -1,4 +1,4 @@
-const container = document.querySelector(".container")
+let container = document.querySelector(".container")
 
 function generateMasonryGrid(columns, posts) {
 	container.innerHTML = ""

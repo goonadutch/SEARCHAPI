@@ -72,6 +72,8 @@ document.querySelector(".searchButton").addEventListener("click", async () => {
 
 	let resultsDiv = document.querySelector(".resultsContainer")
 	if (searchType === "images") {
+		resultsDiv.innerHTML = `<div class="container"></div>`
+		container = document.querySelector(".container")
 		createImageResultsHTML(results)
 	} else {
 		resultsDiv.innerHTML = createSiteResultsHTML(results)
